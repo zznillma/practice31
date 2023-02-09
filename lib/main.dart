@@ -179,12 +179,15 @@ class Screen extends StatelessWidget {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(22),
                                     border: Border.all(
-                                      color: Colors.black,
-                                      width: 6,
+                                      color: const Color(0xffD9D9D9),
+                                      width: 2,
                                     ),
                                   ),
                                 ),
-                                const Text('Наша мымра')
+                                const Text(
+                                  'Наша мымра',
+                                  style: TextStyle(color: Colors.black54),
+                                )
                               ],
                             ),
                             Container(height: 30),
@@ -198,12 +201,15 @@ class Screen extends StatelessWidget {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(22),
                                     border: Border.all(
-                                      color: Colors.black,
-                                      width: 6,
+                                      color: const Color(0xffD9D9D9),
+                                      width: 2,
                                     ),
                                   ),
                                 ),
-                                const Text('Мужчина в юбке')
+                                const Text(
+                                  'Мужчина в юбке',
+                                  style: TextStyle(color: Colors.black54),
+                                )
                               ],
                             ),
                             Container(height: 30),
@@ -239,24 +245,22 @@ class Screen extends StatelessWidget {
                   color: const Color(0xffF6F6FB),
                   child: Row(
                     children: [
-                      const Spacer(
-                        flex: 3
-                      ),
-                      const Text(
-                        'Далее',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                      const Padding(
+                        padding: EdgeInsets.only(right: 15, left: 58),
+                        child: Text(
+                          'Далее',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                          ),
                         ),
                       ),
-                      const Spacer(flex: 1),
                       SizedBox(
                         height: 9,
                         width: 14,
                         child: Image.asset('assets/images/arrow2.png'),
                       ),
-                      const Spacer(flex: 4)
                     ],
                   ),
                 ),
